@@ -11,6 +11,6 @@
 #### 2. Analyzer: This is the main file responsible for report generation. It is suggested to tune the related configuration to your use.
 #### 3. Results: Final visual and text results can be found under results folder.
 
-<img width="1000" height="600" alt="2025-05-25_18-42-27_hist" src="https://github.com/user-attachments/assets/93e2c9f8-a3b1-4782-9f61-f52a34885159" />
-<img width="1400" height="700" alt="iterations" src="https://github.com/user-attachments/assets/8bfe1f1d-8e26-4b09-9172-a1216dee4d86" />
-<img width="1600" height="800" alt="2025-05-24_13-42-53_layer_stacks_1" src="https://github.com/user-attachments/assets/9e49303d-fa7e-494a-8ade-a159e8b7a597" />
+<img width="1600" height="800" alt="2025-05-24_13-42-53_layer_stacks_1" src="https://github.com/user-attachments/assets/5682c9ae-60f4-4afa-84c0-00110b8d6588" />
+<img width="1400" height="700" alt="iterations" src="https://github.com/user-attachments/assets/bce6d6b6-2c8b-4e0b-b95c-3019db44e7a2" />
+<img width="1000" height="600" alt="2025-05-25_18-42-27_hist" src="https://github.com/user-attachments/assets/6bafdfd0-d789-4f05-b07b-57d46b7296ef" />
