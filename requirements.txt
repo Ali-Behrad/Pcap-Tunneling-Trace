@@ -1,0 +1,6 @@
+pyshark==0.6
+pyyaml==6.0.2
+dpkt==1.9.8
+scapy==2.6.1
+matplotlib==3.10.3
+dpkt==1.9.8

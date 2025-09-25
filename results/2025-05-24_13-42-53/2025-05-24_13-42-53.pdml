@@ -1,0 +1,1643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="pdml2html.xsl"?>
+<!-- You can find pdml2html.xsl in /usr/share/doc/wireshark or at https://gitlab.com/wireshark/wireshark/-/tree/master/resources/share/doc/wireshark/pdml2html.xsl. -->
+<pdml version="0" creator="wireshark/4.2.5" time="Mon May 26 10:33:22 2025" capture_file="./captured_pcaps/2025-05-24_13-42-53/2025-05-24_13-42-53.pcap">
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="1" showname="Number" value="1" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:42:59.196066000 +0330" showname="Captured Time" value="1748081579.196066000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 1: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:42:59.196066000 +0330" size="0" pos="0" show="May 24, 2025 13:42:59.196066000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:12:59.196066000 UTC" size="0" pos="0" show="May 24, 2025 10:12:59.196066000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081579.196066000" size="0" pos="0" show="1748081579.196066000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.number" showname="Frame Number: 1" size="0" pos="0" show="1"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 1.1.1.1" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0x3752 (14162)" size="2" pos="18" show="0x3752" value="3752"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa848 [validation disabled]" size="2" pos="24" show="0xa848" value="a848"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 1.1.1.1" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst_host" showname="Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 8 (Echo (ping) request)" size="1" pos="34" show="8" value="08"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0x9909 [correct]" size="2" pos="36" show="0x9909" value="9909"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 26 (0x001a)" size="2" pos="40" show="26" value="001a"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 6656 (0x1a00)" size="2" pos="40" show="6656" value="001a"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:42:59.196032000 +0330" size="16" pos="42" show="May 24, 2025 13:42:59.196032000 +0330" value="ab9b316800000000c0fd020000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.000034000 seconds" size="16" pos="42" show="0.000034000" value="ab9b316800000000c0fd020000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="2" showname="Number" value="2" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:42:59.321955000 +0330" showname="Captured Time" value="1748081579.321955000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 2: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:42:59.321955000 +0330" size="0" pos="0" show="May 24, 2025 13:42:59.321955000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:12:59.321955000 UTC" size="0" pos="0" show="May 24, 2025 10:12:59.321955000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081579.321955000" size="0" pos="0" show="1748081579.321955000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.125889000 seconds" size="0" pos="0" show="0.125889000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.125889000 seconds" size="0" pos="0" show="0.125889000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 0.125889000 seconds" size="0" pos="0" show="0.125889000"/>
+    <field name="frame.number" showname="Frame Number: 2" size="0" pos="0" show="2"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 1.1.1.1, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x08 (DSCP: Unknown, ECN: Not-ECT)" size="1" pos="15" show="0x08" value="08">
+      <field name="ip.dsfield.dscp" showname="0000 10.. = Differentiated Services Codepoint: Unknown (2)" size="1" pos="15" show="2" value="2" unmaskedvalue="08"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="08"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0x3433 (13363)" size="2" pos="18" show="0x3433" value="3433"/>
+    <field name="ip.flags" showname="000. .... = Flags: 0x0" size="1" pos="20" show="0x00" value="0" unmaskedvalue="00">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.df" showname=".0.. .... = Don&#x27;t fragment: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="0000"/>
+    <field name="ip.ttl" showname="Time to Live: 50" size="1" pos="22" show="50" value="32"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xf95f [validation disabled]" size="2" pos="24" show="0xf95f" value="f95f"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 1.1.1.1" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.src_host" showname="Source Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 0 (Echo (ping) reply)" size="1" pos="34" show="0" value="00"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0xa109 [correct]" size="2" pos="36" show="0xa109" value="a109"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 26 (0x001a)" size="2" pos="40" show="26" value="001a"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 6656 (0x1a00)" size="2" pos="40" show="6656" value="001a"/>
+    <field name="icmp.resp_to" showname="Request frame: 1" size="0" pos="34" show="1"/>
+    <field name="icmp.resptime" showname="Response time: 125.889 ms" size="0" pos="34" show="125.889"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:42:59.196032000 +0330" size="16" pos="42" show="May 24, 2025 13:42:59.196032000 +0330" value="ab9b316800000000c0fd020000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.125923000 seconds" size="16" pos="42" show="0.125923000" value="ab9b316800000000c0fd020000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="3" showname="Number" value="3" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.197211000 +0330" showname="Captured Time" value="1748081580.197211000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 3: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.197211000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.197211000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.197211000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.197211000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.197211000" size="0" pos="0" show="1748081580.197211000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.875256000 seconds" size="0" pos="0" show="0.875256000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.875256000 seconds" size="0" pos="0" show="0.875256000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.001145000 seconds" size="0" pos="0" show="1.001145000"/>
+    <field name="frame.number" showname="Frame Number: 3" size="0" pos="0" show="3"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 1.1.1.1" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0x37c3 (14275)" size="2" pos="18" show="0x37c3" value="37c3"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa7d7 [validation disabled]" size="2" pos="24" show="0xa7d7" value="a7d7"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 1.1.1.1" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst_host" showname="Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 8 (Echo (ping) request)" size="1" pos="34" show="8" value="08"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0x1f04 [correct]" size="2" pos="36" show="0x1f04" value="1f04"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 27 (0x001b)" size="2" pos="40" show="27" value="001b"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 6912 (0x1b00)" size="2" pos="40" show="6912" value="001b"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:43:00.197177000 +0330" size="16" pos="42" show="May 24, 2025 13:43:00.197177000 +0330" value="ac9b3168000000003902030000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.000034000 seconds" size="16" pos="42" show="0.000034000" value="ac9b3168000000003902030000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="4" showname="Number" value="4" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.321063000 +0330" showname="Captured Time" value="1748081580.321063000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 4: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.321063000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.321063000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.321063000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.321063000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.321063000" size="0" pos="0" show="1748081580.321063000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.123852000 seconds" size="0" pos="0" show="0.123852000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.123852000 seconds" size="0" pos="0" show="0.123852000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.124997000 seconds" size="0" pos="0" show="1.124997000"/>
+    <field name="frame.number" showname="Frame Number: 4" size="0" pos="0" show="4"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 1.1.1.1, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x08 (DSCP: Unknown, ECN: Not-ECT)" size="1" pos="15" show="0x08" value="08">
+      <field name="ip.dsfield.dscp" showname="0000 10.. = Differentiated Services Codepoint: Unknown (2)" size="1" pos="15" show="2" value="2" unmaskedvalue="08"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="08"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0xeaca (60106)" size="2" pos="18" show="0xeaca" value="eaca"/>
+    <field name="ip.flags" showname="000. .... = Flags: 0x0" size="1" pos="20" show="0x00" value="0" unmaskedvalue="00">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.df" showname=".0.. .... = Don&#x27;t fragment: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="0000"/>
+    <field name="ip.ttl" showname="Time to Live: 50" size="1" pos="22" show="50" value="32"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0x42c8 [validation disabled]" size="2" pos="24" show="0x42c8" value="42c8"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 1.1.1.1" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.src_host" showname="Source Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 0 (Echo (ping) reply)" size="1" pos="34" show="0" value="00"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0x2704 [correct]" size="2" pos="36" show="0x2704" value="2704"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 27 (0x001b)" size="2" pos="40" show="27" value="001b"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 6912 (0x1b00)" size="2" pos="40" show="6912" value="001b"/>
+    <field name="icmp.resp_to" showname="Request frame: 3" size="0" pos="34" show="3"/>
+    <field name="icmp.resptime" showname="Response time: 123.852 ms" size="0" pos="34" show="123.852"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:43:00.197177000 +0330" size="16" pos="42" show="May 24, 2025 13:43:00.197177000 +0330" value="ac9b3168000000003902030000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.123886000 seconds" size="16" pos="42" show="0.123886000" value="ac9b3168000000003902030000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="80">
+    <field name="num" pos="0" show="5" showname="Number" value="5" size="80"/>
+    <field name="len" pos="0" show="80" showname="Frame Length" value="50" size="80"/>
+    <field name="caplen" pos="0" show="80" showname="Captured Length" value="50" size="80"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.430196000 +0330" showname="Captured Time" value="1748081580.430196000" size="80"/>
+  </proto>
+  <proto name="frame" showname="Frame 5: 80 bytes on wire (640 bits), 80 bytes captured (640 bits)" size="80" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.430196000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.430196000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.430196000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.430196000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.430196000" size="0" pos="0" show="1748081580.430196000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.109133000 seconds" size="0" pos="0" show="0.109133000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.109133000 seconds" size="0" pos="0" show="0.109133000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.234130000 seconds" size="0" pos="0" show="1.234130000"/>
+    <field name="frame.number" showname="Frame Number: 5" size="0" pos="0" show="5"/>
+    <field name="frame.len" showname="Frame Length: 80 bytes (640 bits)" size="0" pos="0" show="80"/>
+    <field name="frame.cap_len" showname="Capture Length: 80 bytes (640 bits)" size="0" pos="0" show="80"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:udp:dns" size="0" pos="0" show="eth:ethertype:ip:udp:dns"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 178.22.122.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 66" size="2" pos="16" show="66" value="0042"/>
+    <field name="ip.id" showname="Identification: 0x8ea2 (36514)" size="2" pos="18" show="0x8ea2" value="8ea2"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: UDP (17)" size="1" pos="23" show="17" value="11"/>
+    <field name="ip.checksum" showname="Header Checksum: 0x2681 [validation disabled]" size="2" pos="24" show="0x2681" value="2681"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 178.22.122.100" size="4" pos="30" show="178.22.122.100" value="b2167a64"/>
+    <field name="ip.addr" showname="Source or Destination Address: 178.22.122.100" hide="yes" size="4" pos="30" show="178.22.122.100" value="b2167a64"/>
+    <field name="ip.dst_host" showname="Destination Host: 178.22.122.100" hide="yes" size="4" pos="30" show="178.22.122.100" value="b2167a64"/>
+    <field name="ip.host" showname="Source or Destination Host: 178.22.122.100" hide="yes" size="4" pos="30" show="178.22.122.100" value="b2167a64"/>
+  </proto>
+  <proto name="udp" showname="User Datagram Protocol, Src Port: 33803, Dst Port: 53" size="8" pos="34">
+    <field name="udp.srcport" showname="Source Port: 33803" size="2" pos="34" show="33803" value="840b"/>
+    <field name="udp.dstport" showname="Destination Port: 53" size="2" pos="36" show="53" value="0035"/>
+    <field name="udp.port" showname="Source or Destination Port: 33803" hide="yes" size="2" pos="34" show="33803" value="840b"/>
+    <field name="udp.port" showname="Source or Destination Port: 53" hide="yes" size="2" pos="36" show="53" value="0035"/>
+    <field name="udp.length" showname="Length: 46" size="2" pos="38" show="46" value="002e"/>
+    <field name="udp.checksum" showname="Checksum: 0xf1a4 [unverified]" size="2" pos="40" show="0xf1a4" value="f1a4"/>
+    <field name="udp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="40" show="2"/>
+    <field name="udp.stream" showname="Stream index: 0" size="0" pos="42" show="0"/>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="udp.time_relative" showname="Time since first frame: 0.000000000 seconds" size="0" pos="34" show="0.000000000"/>
+      <field name="udp.time_delta" showname="Time since previous frame: 0.000000000 seconds" size="0" pos="34" show="0.000000000"/>
+    </field>
+    <field name="udp.payload" showname="UDP payload (38 bytes)" size="38" pos="42" show="52:42:01:00:00:01:00:00:00:00:00:00:06:65:64:67:65:30:31:03:31:30:39:02:69:72:03:63:64:6e:02:69:72:00:00:01:00:01" value="52420100000100000000000006656467653031033130390269720363646e0269720000010001"/>
+  </proto>
+  <proto name="dns" showname="Domain Name System (query)" size="38" pos="42">
+    <field name="dns.id" showname="Transaction ID: 0x5242" size="2" pos="42" show="0x5242" value="5242"/>
+    <field name="dns.flags" showname="Flags: 0x0100 Standard query" size="2" pos="44" show="0x0100" value="0100">
+      <field name="dns.flags.response" showname="0... .... .... .... = Response: Message is a query" size="2" pos="44" show="False" value="0" unmaskedvalue="0100"/>
+      <field name="dns.flags.opcode" showname=".000 0... .... .... = Opcode: Standard query (0)" size="2" pos="44" show="0" value="0" unmaskedvalue="0100"/>
+      <field name="dns.flags.truncated" showname=".... ..0. .... .... = Truncated: Message is not truncated" size="2" pos="44" show="False" value="0" unmaskedvalue="0100"/>
+      <field name="dns.flags.recdesired" showname=".... ...1 .... .... = Recursion desired: Do query recursively" size="2" pos="44" show="True" value="1" unmaskedvalue="0100"/>
+      <field name="dns.flags.z" showname=".... .... .0.. .... = Z: reserved (0)" size="2" pos="44" show="False" value="0" unmaskedvalue="0100"/>
+      <field name="dns.flags.checkdisable" showname=".... .... ...0 .... = Non-authenticated data: Unacceptable" size="2" pos="44" show="False" value="0" unmaskedvalue="0100"/>
+    </field>
+    <field name="dns.count.queries" showname="Questions: 1" size="2" pos="46" show="1" value="0001"/>
+    <field name="dns.count.answers" showname="Answer RRs: 0" size="2" pos="48" show="0" value="0000"/>
+    <field name="dns.count.auth_rr" showname="Authority RRs: 0" size="2" pos="50" show="0" value="0000"/>
+    <field name="dns.count.add_rr" showname="Additional RRs: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="" show="Queries" size="26" pos="54" value="06656467653031033130390269720363646e0269720000010001">
+      <field name="" show="edge01.109.ir.cdn.ir: type A, class IN" size="26" pos="54" value="06656467653031033130390269720363646e0269720000010001">
+        <field name="dns.qry.name" showname="Name: edge01.109.ir.cdn.ir" size="22" pos="54" show="edge01.109.ir.cdn.ir" value="06656467653031033130390269720363646e02697200"/>
+        <field name="dns.qry.name.len" showname="Name Length: 20" size="22" pos="54" show="20" value="06656467653031033130390269720363646e02697200"/>
+        <field name="dns.count.labels" showname="Label Count: 5" size="22" pos="54" show="5" value="06656467653031033130390269720363646e02697200"/>
+        <field name="dns.qry.type" showname="Type: A (1) (Host Address)" size="2" pos="76" show="1" value="0001"/>
+        <field name="dns.qry.class" showname="Class: IN (0x0001)" size="2" pos="78" show="0x0001" value="0001"/>
+      </field>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="90">
+    <field name="num" pos="0" show="6" showname="Number" value="6" size="90"/>
+    <field name="len" pos="0" show="90" showname="Frame Length" value="5a" size="90"/>
+    <field name="caplen" pos="0" show="90" showname="Captured Length" value="5a" size="90"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.672038000 +0330" showname="Captured Time" value="1748081580.672038000" size="90"/>
+  </proto>
+  <proto name="frame" showname="Frame 6: 90 bytes on wire (720 bits), 90 bytes captured (720 bits)" size="90" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.672038000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.672038000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.672038000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.672038000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.672038000" size="0" pos="0" show="1748081580.672038000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.241842000 seconds" size="0" pos="0" show="0.241842000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.241842000 seconds" size="0" pos="0" show="0.241842000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.475972000 seconds" size="0" pos="0" show="1.475972000"/>
+    <field name="frame.number" showname="Frame Number: 6" size="0" pos="0" show="6"/>
+    <field name="frame.len" showname="Frame Length: 90 bytes (720 bits)" size="0" pos="0" show="90"/>
+    <field name="frame.cap_len" showname="Capture Length: 90 bytes (720 bits)" size="0" pos="0" show="90"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:tcp:tls" size="0" pos="0" show="eth:ethertype:ip:tcp:tls"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 193.151.157.106, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 76" size="2" pos="16" show="76" value="004c"/>
+    <field name="ip.id" showname="Identification: 0xe825 (59429)" size="2" pos="18" show="0xe825" value="e825"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 53" size="1" pos="22" show="53" value="35"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa577 [validation disabled]" size="2" pos="24" show="0xa577" value="a577"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 193.151.157.106" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.addr" showname="Source or Destination Address: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.src_host" showname="Source Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.host" showname="Source or Destination Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: 443, Dst Port: 33856, Seq: 1, Ack: 1, Len: 24" size="32" pos="34">
+    <field name="tcp.srcport" showname="Source Port: 443" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.dstport" showname="Destination Port: 33856" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 33856" hide="yes" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.completeness" showname="Conversation completeness: Incomplete (0)" size="0" pos="34" show="0">
+      <field name="tcp.completeness.rst" showname="..0. .... = RST: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.fin" showname="...0 .... = FIN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.data" showname=".... 0... = Data: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.ack" showname=".... .0.. = ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn-ack" showname=".... ..0. = SYN-ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn" showname=".... ...0 = SYN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.str" showname="Completeness Flags: [ Null ]" size="0" pos="34" show="[ Null ]"/>
+    </field>
+    <field name="tcp.len" showname="TCP Segment Len: 24" size="0" pos="34" show="24"/>
+    <field name="tcp.seq" showname="Sequence Number: 1    (relative sequence number)" size="4" pos="38" show="1" value="f914e4f0"/>
+    <field name="tcp.seq_raw" showname="Sequence Number (raw): 4178896112" size="4" pos="38" show="4178896112" value="f914e4f0"/>
+    <field name="tcp.nxtseq" showname="Next Sequence Number: 25    (relative sequence number)" size="0" pos="34" show="25"/>
+    <field name="tcp.ack" showname="Acknowledgment Number: 1    (relative ack number)" size="4" pos="42" show="1" value="39604d6d"/>
+    <field name="tcp.ack_raw" showname="Acknowledgment number (raw): 962612589" size="4" pos="42" show="962612589" value="39604d6d"/>
+    <field name="tcp.hdr_len" showname="1000 .... = Header Length: 32 bytes (8)" size="1" pos="46" show="32" value="80"/>
+    <field name="tcp.flags" showname="Flags: 0x018 (PSH, ACK)" size="2" pos="46" show="0x0018" value="18" unmaskedvalue="8018">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.ae" showname="...0 .... .... = Accurate ECN: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ece" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.push" showname=".... .... 1... = Push: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="18"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="18"/>
+      <field name="tcp.flags.str" showname="TCP Flags: ·······AP···" size="2" pos="46" show="·······AP···" value="8018"/>
+    </field>
+    <field name="tcp.window_size_value" showname="Window: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size" showname="Calculated window size: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -1 (unknown)" size="2" pos="48" show="-1" value="00f3"/>
+    <field name="tcp.checksum" showname="Checksum: 0x6b50 [unverified]" size="2" pos="50" show="0x6b50" value="6b50"/>
+    <field name="tcp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="50" show="2"/>
+    <field name="tcp.urgent_pointer" showname="Urgent Pointer: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="tcp.options" showname="Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps" size="12" pos="54" show="01:01:08:0a:82:8e:e8:e4:76:e3:47:e2" value="0101080a828ee8e476e347e2">
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="54" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="54" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="55" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="55" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.timestamp" showname="TCP Option - Timestamps: TSval 2190403812, TSecr 1994606562" size="10" pos="56" show="08:0a:82:8e:e8:e4:76:e3:47:e2" value="080a828ee8e476e347e2">
+        <field name="tcp.option_kind" showname="Kind: Time Stamp Option (8)" size="1" pos="56" show="8" value="08"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="57" show="10" value="0a"/>
+        <field name="tcp.options.timestamp.tsval" showname="Timestamp value: 2190403812" size="4" pos="58" show="2190403812" value="828ee8e4"/>
+        <field name="tcp.options.timestamp.tsecr" showname="Timestamp echo reply: 1994606562" size="4" pos="62" show="1994606562" value="76e347e2"/>
+      </field>
+    </field>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="tcp.time_relative" showname="Time since first frame in this TCP stream: 0.000000000 seconds" size="0" pos="34" show="0.000000000"/>
+      <field name="tcp.time_delta" showname="Time since previous frame in this TCP stream: 0.000000000 seconds" size="0" pos="34" show="0.000000000"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.bytes_in_flight" showname="Bytes in flight: 24" size="0" pos="34" show="24"/>
+      <field name="tcp.analysis.push_bytes_sent" showname="Bytes sent since last PSH flag: 24" size="0" pos="34" show="24"/>
+    </field>
+    <field name="tcp.payload" showname="TCP payload (24 bytes)" size="24" pos="66" show="17:03:03:00:13:e2:23:18:4d:c4:7c:69:16:79:29:d9:b9:a0:17:49:4a:e8:c5:f3" value="1703030013e223184dc47c69167929d9b9a017494ae8c5f3"/>
+  </proto>
+  <proto name="tls" showname="Transport Layer Security" size="24" pos="66">
+    <field name="tls.record" showname="TLSv1.2 Record Layer: Application Data Protocol: Hypertext Transfer Protocol" size="24" pos="66" show="" value="">
+      <field name="tls.record.content_type" showname="Content Type: Application Data (23)" size="1" pos="66" show="23" value="17"/>
+      <field name="tls.record.version" showname="Version: TLS 1.2 (0x0303)" size="2" pos="67" show="0x0303" value="0303"/>
+      <field name="tls.record.length" showname="Length: 19" size="2" pos="69" show="19" value="0013"/>
+      <field name="tls.app_data" showname="Encrypted Application Data: e223184dc47c69167929d9b9a017494ae8c5f3" size="19" pos="71" show="e2:23:18:4d:c4:7c:69:16:79:29:d9:b9:a0:17:49:4a:e8:c5:f3" value="e223184dc47c69167929d9b9a017494ae8c5f3"/>
+      <field name="tls.app_data_proto" showname="Application Data Protocol: Hypertext Transfer Protocol" size="0" pos="66" show="Hypertext Transfer Protocol"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="66">
+    <field name="num" pos="0" show="7" showname="Number" value="7" size="66"/>
+    <field name="len" pos="0" show="66" showname="Frame Length" value="42" size="66"/>
+    <field name="caplen" pos="0" show="66" showname="Captured Length" value="42" size="66"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.672077000 +0330" showname="Captured Time" value="1748081580.672077000" size="66"/>
+  </proto>
+  <proto name="frame" showname="Frame 7: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)" size="66" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.672077000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.672077000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.672077000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.672077000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.672077000" size="0" pos="0" show="1748081580.672077000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000039000 seconds" size="0" pos="0" show="0.000039000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000039000 seconds" size="0" pos="0" show="0.000039000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.476011000 seconds" size="0" pos="0" show="1.476011000"/>
+    <field name="frame.number" showname="Frame Number: 7" size="0" pos="0" show="7"/>
+    <field name="frame.len" showname="Frame Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.cap_len" showname="Capture Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:tcp" size="0" pos="0" show="eth:ethertype:ip:tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 193.151.157.106, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 52" size="2" pos="16" show="52" value="0034"/>
+    <field name="ip.id" showname="Identification: 0xe826 (59430)" size="2" pos="18" show="0xe826" value="e826"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 53" size="1" pos="22" show="53" value="35"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa58e [validation disabled]" size="2" pos="24" show="0xa58e" value="a58e"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 193.151.157.106" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.addr" showname="Source or Destination Address: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.src_host" showname="Source Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.host" showname="Source or Destination Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: 443, Dst Port: 33856, Seq: 25, Ack: 1, Len: 0" size="32" pos="34">
+    <field name="tcp.srcport" showname="Source Port: 443" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.dstport" showname="Destination Port: 33856" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 33856" hide="yes" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.completeness" showname="Conversation completeness: Incomplete (8)" size="0" pos="34" show="8">
+      <field name="tcp.completeness.rst" showname="..0. .... = RST: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.fin" showname="...0 .... = FIN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.data" showname=".... 1... = Data: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.ack" showname=".... .0.. = ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn-ack" showname=".... ..0. = SYN-ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn" showname=".... ...0 = SYN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.str" showname="Completeness Flags: ··D···" size="0" pos="34" show="··D···"/>
+    </field>
+    <field name="tcp.len" showname="TCP Segment Len: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.seq" showname="Sequence Number: 25    (relative sequence number)" size="4" pos="38" show="25" value="f914e508"/>
+    <field name="tcp.seq_raw" showname="Sequence Number (raw): 4178896136" size="4" pos="38" show="4178896136" value="f914e508"/>
+    <field name="tcp.nxtseq" showname="Next Sequence Number: 26    (relative sequence number)" size="0" pos="34" show="26"/>
+    <field name="tcp.ack" showname="Acknowledgment Number: 1    (relative ack number)" size="4" pos="42" show="1" value="39604d6d"/>
+    <field name="tcp.ack_raw" showname="Acknowledgment number (raw): 962612589" size="4" pos="42" show="962612589" value="39604d6d"/>
+    <field name="tcp.hdr_len" showname="1000 .... = Header Length: 32 bytes (8)" size="1" pos="46" show="32" value="80"/>
+    <field name="tcp.flags" showname="Flags: 0x011 (FIN, ACK)" size="2" pos="46" show="0x0011" value="11" unmaskedvalue="8011">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.ae" showname="...0 .... .... = Accurate ECN: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.ece" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="11"/>
+      <field name="tcp.flags.push" showname=".... .... 0... = Push: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.fin" showname=".... .... ...1 = Fin: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="11">
+        <field name="_ws.expert" showname="Expert Info (Chat/Sequence): Connection finish (FIN)" size="0" pos="47">
+          <field name="tcp.connection.fin" showname="Connection finish (FIN)" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: Connection finish (FIN)" hide="yes" size="0" pos="0" show="Connection finish (FIN)"/>
+          <field name="_ws.expert.severity" showname="Severity level: Chat" size="0" pos="0" show="2097152"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+      </field>
+      <field name="tcp.flags.str" showname="TCP Flags: ·······A···F" size="2" pos="46" show="·······A···F" value="8011">
+        <field name="_ws.expert" showname="Expert Info (Note/Sequence): This frame initiates the connection closing" size="0" pos="46">
+          <field name="tcp.connection.fin_active" showname="This frame initiates the connection closing" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: This frame initiates the connection closing" hide="yes" size="0" pos="0" show="This frame initiates the connection closing"/>
+          <field name="_ws.expert.severity" showname="Severity level: Note" size="0" pos="0" show="4194304"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+      </field>
+    </field>
+    <field name="tcp.window_size_value" showname="Window: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size" showname="Calculated window size: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -1 (unknown)" size="2" pos="48" show="-1" value="00f3"/>
+    <field name="tcp.checksum" showname="Checksum: 0xa89a [unverified]" size="2" pos="50" show="0xa89a" value="a89a"/>
+    <field name="tcp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="50" show="2"/>
+    <field name="tcp.urgent_pointer" showname="Urgent Pointer: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="tcp.options" showname="Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps" size="12" pos="54" show="01:01:08:0a:82:8e:e8:e4:76:e3:47:e2" value="0101080a828ee8e476e347e2">
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="54" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="54" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="55" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="55" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.timestamp" showname="TCP Option - Timestamps: TSval 2190403812, TSecr 1994606562" size="10" pos="56" show="08:0a:82:8e:e8:e4:76:e3:47:e2" value="080a828ee8e476e347e2">
+        <field name="tcp.option_kind" showname="Kind: Time Stamp Option (8)" size="1" pos="56" show="8" value="08"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="57" show="10" value="0a"/>
+        <field name="tcp.options.timestamp.tsval" showname="Timestamp value: 2190403812" size="4" pos="58" show="2190403812" value="828ee8e4"/>
+        <field name="tcp.options.timestamp.tsecr" showname="Timestamp echo reply: 1994606562" size="4" pos="62" show="1994606562" value="76e347e2"/>
+      </field>
+    </field>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="tcp.time_relative" showname="Time since first frame in this TCP stream: 0.000039000 seconds" size="0" pos="34" show="0.000039000"/>
+      <field name="tcp.time_delta" showname="Time since previous frame in this TCP stream: 0.000039000 seconds" size="0" pos="34" show="0.000039000"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="66">
+    <field name="num" pos="0" show="8" showname="Number" value="8" size="66"/>
+    <field name="len" pos="0" show="66" showname="Frame Length" value="42" size="66"/>
+    <field name="caplen" pos="0" show="66" showname="Captured Length" value="42" size="66"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.713444000 +0330" showname="Captured Time" value="1748081580.713444000" size="66"/>
+  </proto>
+  <proto name="frame" showname="Frame 8: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)" size="66" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.713444000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.713444000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.713444000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.713444000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.713444000" size="0" pos="0" show="1748081580.713444000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.041367000 seconds" size="0" pos="0" show="0.041367000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.041367000 seconds" size="0" pos="0" show="0.041367000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.517378000 seconds" size="0" pos="0" show="1.517378000"/>
+    <field name="frame.number" showname="Frame Number: 8" size="0" pos="0" show="8"/>
+    <field name="frame.len" showname="Frame Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.cap_len" showname="Capture Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:tcp" size="0" pos="0" show="eth:ethertype:ip:tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 193.151.157.106" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 52" size="2" pos="16" show="52" value="0034"/>
+    <field name="ip.id" showname="Identification: 0x4e0f (19983)" size="2" pos="18" show="0x4e0f" value="4e0f"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header Checksum: 0x34a6 [validation disabled]" size="2" pos="24" show="0x34a6" value="34a6"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 193.151.157.106" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.addr" showname="Source or Destination Address: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.dst_host" showname="Destination Host: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.host" showname="Source or Destination Host: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: 33856, Dst Port: 443, Seq: 1, Ack: 26, Len: 0" size="32" pos="34">
+    <field name="tcp.srcport" showname="Source Port: 33856" size="2" pos="34" show="33856" value="8440"/>
+    <field name="tcp.dstport" showname="Destination Port: 443" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 33856" hide="yes" size="2" pos="34" show="33856" value="8440"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.completeness" showname="Conversation completeness: Incomplete (28)" size="0" pos="34" show="28">
+      <field name="tcp.completeness.rst" showname="..0. .... = RST: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.fin" showname="...1 .... = FIN: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.data" showname=".... 1... = Data: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.ack" showname=".... .1.. = ACK: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.syn-ack" showname=".... ..0. = SYN-ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn" showname=".... ...0 = SYN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.str" showname="Completeness Flags: ·FDA··" size="0" pos="34" show="·FDA··"/>
+    </field>
+    <field name="tcp.len" showname="TCP Segment Len: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.seq" showname="Sequence Number: 1    (relative sequence number)" size="4" pos="38" show="1" value="39604d6d"/>
+    <field name="tcp.seq_raw" showname="Sequence Number (raw): 962612589" size="4" pos="38" show="962612589" value="39604d6d"/>
+    <field name="tcp.nxtseq" showname="Next Sequence Number: 1    (relative sequence number)" size="0" pos="34" show="1"/>
+    <field name="tcp.ack" showname="Acknowledgment Number: 26    (relative ack number)" size="4" pos="42" show="26" value="f914e509"/>
+    <field name="tcp.ack_raw" showname="Acknowledgment number (raw): 4178896137" size="4" pos="42" show="4178896137" value="f914e509"/>
+    <field name="tcp.hdr_len" showname="1000 .... = Header Length: 32 bytes (8)" size="1" pos="46" show="32" value="80"/>
+    <field name="tcp.flags" showname="Flags: 0x010 (ACK)" size="2" pos="46" show="0x0010" value="10" unmaskedvalue="8010">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.ae" showname="...0 .... .... = Accurate ECN: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.ece" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="10"/>
+      <field name="tcp.flags.push" showname=".... .... 0... = Push: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.str" showname="TCP Flags: ·······A····" size="2" pos="46" show="·······A····" value="8010"/>
+    </field>
+    <field name="tcp.window_size_value" showname="Window: 472" size="2" pos="48" show="472" value="01d8"/>
+    <field name="tcp.window_size" showname="Calculated window size: 472" size="2" pos="48" show="472" value="01d8"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -1 (unknown)" size="2" pos="48" show="-1" value="01d8"/>
+    <field name="tcp.checksum" showname="Checksum: 0x7f83 [unverified]" size="2" pos="50" show="0x7f83" value="7f83"/>
+    <field name="tcp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="50" show="2"/>
+    <field name="tcp.urgent_pointer" showname="Urgent Pointer: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="tcp.options" showname="Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps" size="12" pos="54" show="01:01:08:0a:76:e3:70:14:82:8e:e8:e4" value="0101080a76e37014828ee8e4">
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="54" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="54" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="55" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="55" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.timestamp" showname="TCP Option - Timestamps: TSval 1994616852, TSecr 2190403812" size="10" pos="56" show="08:0a:76:e3:70:14:82:8e:e8:e4" value="080a76e37014828ee8e4">
+        <field name="tcp.option_kind" showname="Kind: Time Stamp Option (8)" size="1" pos="56" show="8" value="08"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="57" show="10" value="0a"/>
+        <field name="tcp.options.timestamp.tsval" showname="Timestamp value: 1994616852" size="4" pos="58" show="1994616852" value="76e37014"/>
+        <field name="tcp.options.timestamp.tsecr" showname="Timestamp echo reply: 2190403812" size="4" pos="62" show="2190403812" value="828ee8e4"/>
+      </field>
+    </field>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="tcp.time_relative" showname="Time since first frame in this TCP stream: 0.041406000 seconds" size="0" pos="34" show="0.041406000"/>
+      <field name="tcp.time_delta" showname="Time since previous frame in this TCP stream: 0.041367000 seconds" size="0" pos="34" show="0.041367000"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.acks_frame" showname="This is an ACK to the segment in frame: 7" size="0" pos="34" show="7"/>
+      <field name="tcp.analysis.ack_rtt" showname="The RTT to ACK the segment was: 0.041367000 seconds" size="0" pos="34" show="0.041367000"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="66">
+    <field name="num" pos="0" show="9" showname="Number" value="9" size="66"/>
+    <field name="len" pos="0" show="66" showname="Frame Length" value="42" size="66"/>
+    <field name="caplen" pos="0" show="66" showname="Captured Length" value="42" size="66"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.721171000 +0330" showname="Captured Time" value="1748081580.721171000" size="66"/>
+  </proto>
+  <proto name="frame" showname="Frame 9: 66 bytes on wire (528 bits), 66 bytes captured (528 bits)" size="66" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.721171000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.721171000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.721171000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.721171000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.721171000" size="0" pos="0" show="1748081580.721171000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.007727000 seconds" size="0" pos="0" show="0.007727000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.007727000 seconds" size="0" pos="0" show="0.007727000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.525105000 seconds" size="0" pos="0" show="1.525105000"/>
+    <field name="frame.number" showname="Frame Number: 9" size="0" pos="0" show="9"/>
+    <field name="frame.len" showname="Frame Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.cap_len" showname="Capture Length: 66 bytes (528 bits)" size="0" pos="0" show="66"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:tcp" size="0" pos="0" show="eth:ethertype:ip:tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 193.151.157.106, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 52" size="2" pos="16" show="52" value="0034"/>
+    <field name="ip.id" showname="Identification: 0xe827 (59431)" size="2" pos="18" show="0xe827" value="e827"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 53" size="1" pos="22" show="53" value="35"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa58d [validation disabled]" size="2" pos="24" show="0xa58d" value="a58d"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 193.151.157.106" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.addr" showname="Source or Destination Address: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.src_host" showname="Source Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.host" showname="Source or Destination Host: 193.151.157.106" hide="yes" size="4" pos="26" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: 443, Dst Port: 33856, Seq: 25, Ack: 1, Len: 0" size="32" pos="34">
+    <field name="tcp.srcport" showname="Source Port: 443" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.dstport" showname="Destination Port: 33856" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="34" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 33856" hide="yes" size="2" pos="36" show="33856" value="8440"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.completeness" showname="Conversation completeness: Incomplete (28)" size="0" pos="34" show="28">
+      <field name="tcp.completeness.rst" showname="..0. .... = RST: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.fin" showname="...1 .... = FIN: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.data" showname=".... 1... = Data: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.ack" showname=".... .1.. = ACK: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.syn-ack" showname=".... ..0. = SYN-ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn" showname=".... ...0 = SYN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.str" showname="Completeness Flags: ·FDA··" size="0" pos="34" show="·FDA··"/>
+    </field>
+    <field name="tcp.len" showname="TCP Segment Len: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.seq" showname="Sequence Number: 25    (relative sequence number)" size="4" pos="38" show="25" value="f914e508"/>
+    <field name="tcp.seq_raw" showname="Sequence Number (raw): 4178896136" size="4" pos="38" show="4178896136" value="f914e508"/>
+    <field name="tcp.nxtseq" showname="Next Sequence Number: 26    (relative sequence number)" size="0" pos="34" show="26"/>
+    <field name="tcp.ack" showname="Acknowledgment Number: 1    (relative ack number)" size="4" pos="42" show="1" value="39604d6d"/>
+    <field name="tcp.ack_raw" showname="Acknowledgment number (raw): 962612589" size="4" pos="42" show="962612589" value="39604d6d"/>
+    <field name="tcp.hdr_len" showname="1000 .... = Header Length: 32 bytes (8)" size="1" pos="46" show="32" value="80"/>
+    <field name="tcp.flags" showname="Flags: 0x011 (FIN, ACK)" size="2" pos="46" show="0x0011" value="11" unmaskedvalue="8011">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.ae" showname="...0 .... .... = Accurate ECN: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="80"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.ece" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="11"/>
+      <field name="tcp.flags.push" showname=".... .... 0... = Push: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="11"/>
+      <field name="tcp.flags.fin" showname=".... .... ...1 = Fin: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="11">
+        <field name="_ws.expert" showname="Expert Info (Chat/Sequence): Connection finish (FIN)" size="0" pos="47">
+          <field name="tcp.connection.fin" showname="Connection finish (FIN)" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: Connection finish (FIN)" hide="yes" size="0" pos="0" show="Connection finish (FIN)"/>
+          <field name="_ws.expert.severity" showname="Severity level: Chat" size="0" pos="0" show="2097152"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+      </field>
+      <field name="tcp.flags.str" showname="TCP Flags: ·······A···F" size="2" pos="46" show="·······A···F" value="8011">
+        <field name="_ws.expert" showname="Expert Info (Note/Sequence): This frame initiates the connection closing" size="0" pos="46">
+          <field name="tcp.connection.fin_active" showname="This frame initiates the connection closing" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: This frame initiates the connection closing" hide="yes" size="0" pos="0" show="This frame initiates the connection closing"/>
+          <field name="_ws.expert.severity" showname="Severity level: Note" size="0" pos="0" show="4194304"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+      </field>
+    </field>
+    <field name="tcp.window_size_value" showname="Window: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size" showname="Calculated window size: 243" size="2" pos="48" show="243" value="00f3"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -1 (unknown)" size="2" pos="48" show="-1" value="00f3"/>
+    <field name="tcp.checksum" showname="Checksum: 0xa85c [unverified]" size="2" pos="50" show="0xa85c" value="a85c"/>
+    <field name="tcp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="50" show="2"/>
+    <field name="tcp.urgent_pointer" showname="Urgent Pointer: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="tcp.options" showname="Options: (12 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps" size="12" pos="54" show="01:01:08:0a:82:8e:e9:22:76:e3:47:e2" value="0101080a828ee92276e347e2">
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="54" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="54" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="55" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="55" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.timestamp" showname="TCP Option - Timestamps: TSval 2190403874, TSecr 1994606562" size="10" pos="56" show="08:0a:82:8e:e9:22:76:e3:47:e2" value="080a828ee92276e347e2">
+        <field name="tcp.option_kind" showname="Kind: Time Stamp Option (8)" size="1" pos="56" show="8" value="08"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="57" show="10" value="0a"/>
+        <field name="tcp.options.timestamp.tsval" showname="Timestamp value: 2190403874" size="4" pos="58" show="2190403874" value="828ee922"/>
+        <field name="tcp.options.timestamp.tsecr" showname="Timestamp echo reply: 1994606562" size="4" pos="62" show="1994606562" value="76e347e2"/>
+      </field>
+    </field>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="tcp.time_relative" showname="Time since first frame in this TCP stream: 0.049133000 seconds" size="0" pos="34" show="0.049133000"/>
+      <field name="tcp.time_delta" showname="Time since previous frame in this TCP stream: 0.007727000 seconds" size="0" pos="34" show="0.007727000"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.flags" showname="TCP Analysis Flags" size="0" pos="34" show="" value="">
+        <field name="_ws.expert" showname="Expert Info (Note/Sequence): This frame is a (suspected) retransmission" size="0" pos="34">
+          <field name="tcp.analysis.retransmission" showname="This frame is a (suspected) retransmission" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: This frame is a (suspected) retransmission" hide="yes" size="0" pos="0" show="This frame is a (suspected) retransmission"/>
+          <field name="_ws.expert.severity" showname="Severity level: Note" size="0" pos="0" show="4194304"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+        <field name="tcp.analysis.rto" showname="The RTO for this segment was: 0.049094000 seconds" size="0" pos="34" show="0.049094000"/>
+        <field name="tcp.analysis.rto_frame" showname="RTO based on delta from frame: 7" size="0" pos="34" show="7"/>
+      </field>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="78">
+    <field name="num" pos="0" show="10" showname="Number" value="a" size="78"/>
+    <field name="len" pos="0" show="78" showname="Frame Length" value="4e" size="78"/>
+    <field name="caplen" pos="0" show="78" showname="Captured Length" value="4e" size="78"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.721213000 +0330" showname="Captured Time" value="1748081580.721213000" size="78"/>
+  </proto>
+  <proto name="frame" showname="Frame 10: 78 bytes on wire (624 bits), 78 bytes captured (624 bits)" size="78" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.721213000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.721213000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.721213000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.721213000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.721213000" size="0" pos="0" show="1748081580.721213000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000042000 seconds" size="0" pos="0" show="0.000042000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000042000 seconds" size="0" pos="0" show="0.000042000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.525147000 seconds" size="0" pos="0" show="1.525147000"/>
+    <field name="frame.number" showname="Frame Number: 10" size="0" pos="0" show="10"/>
+    <field name="frame.len" showname="Frame Length: 78 bytes (624 bits)" size="0" pos="0" show="78"/>
+    <field name="frame.cap_len" showname="Capture Length: 78 bytes (624 bits)" size="0" pos="0" show="78"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:tcp" size="0" pos="0" show="eth:ethertype:ip:tcp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 193.151.157.106" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 64" size="2" pos="16" show="64" value="0040"/>
+    <field name="ip.id" showname="Identification: 0x4e10 (19984)" size="2" pos="18" show="0x4e10" value="4e10"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: TCP (6)" size="1" pos="23" show="6" value="06"/>
+    <field name="ip.checksum" showname="Header Checksum: 0x3499 [validation disabled]" size="2" pos="24" show="0x3499" value="3499"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 193.151.157.106" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.addr" showname="Source or Destination Address: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.dst_host" showname="Destination Host: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+    <field name="ip.host" showname="Source or Destination Host: 193.151.157.106" hide="yes" size="4" pos="30" show="193.151.157.106" value="c1979d6a"/>
+  </proto>
+  <proto name="tcp" showname="Transmission Control Protocol, Src Port: 33856, Dst Port: 443, Seq: 1, Ack: 26, Len: 0" size="44" pos="34">
+    <field name="tcp.srcport" showname="Source Port: 33856" size="2" pos="34" show="33856" value="8440"/>
+    <field name="tcp.dstport" showname="Destination Port: 443" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.port" showname="Source or Destination Port: 33856" hide="yes" size="2" pos="34" show="33856" value="8440"/>
+    <field name="tcp.port" showname="Source or Destination Port: 443" hide="yes" size="2" pos="36" show="443" value="01bb"/>
+    <field name="tcp.stream" showname="Stream index: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.completeness" showname="Conversation completeness: Incomplete (28)" size="0" pos="34" show="28">
+      <field name="tcp.completeness.rst" showname="..0. .... = RST: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.fin" showname="...1 .... = FIN: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.data" showname=".... 1... = Data: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.ack" showname=".... .1.. = ACK: Present" size="0" pos="0" show="True"/>
+      <field name="tcp.completeness.syn-ack" showname=".... ..0. = SYN-ACK: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.syn" showname=".... ...0 = SYN: Absent" size="0" pos="0" show="False"/>
+      <field name="tcp.completeness.str" showname="Completeness Flags: ·FDA··" size="0" pos="34" show="·FDA··"/>
+    </field>
+    <field name="tcp.len" showname="TCP Segment Len: 0" size="0" pos="34" show="0"/>
+    <field name="tcp.seq" showname="Sequence Number: 1    (relative sequence number)" size="4" pos="38" show="1" value="39604d6d"/>
+    <field name="tcp.seq_raw" showname="Sequence Number (raw): 962612589" size="4" pos="38" show="962612589" value="39604d6d"/>
+    <field name="tcp.nxtseq" showname="Next Sequence Number: 1    (relative sequence number)" size="0" pos="34" show="1"/>
+    <field name="tcp.ack" showname="Acknowledgment Number: 26    (relative ack number)" size="4" pos="42" show="26" value="f914e509"/>
+    <field name="tcp.ack_raw" showname="Acknowledgment number (raw): 4178896137" size="4" pos="42" show="4178896137" value="f914e509"/>
+    <field name="tcp.hdr_len" showname="1011 .... = Header Length: 44 bytes (11)" size="1" pos="46" show="44" value="b0"/>
+    <field name="tcp.flags" showname="Flags: 0x010 (ACK)" size="2" pos="46" show="0x0010" value="10" unmaskedvalue="b010">
+      <field name="tcp.flags.res" showname="000. .... .... = Reserved: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="b0"/>
+      <field name="tcp.flags.ae" showname="...0 .... .... = Accurate ECN: Not set" size="1" pos="46" show="False" value="0" unmaskedvalue="b0"/>
+      <field name="tcp.flags.cwr" showname=".... 0... .... = Congestion Window Reduced: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.ece" showname=".... .0.. .... = ECN-Echo: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.urg" showname=".... ..0. .... = Urgent: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.ack" showname=".... ...1 .... = Acknowledgment: Set" size="1" pos="47" show="True" value="1" unmaskedvalue="10"/>
+      <field name="tcp.flags.push" showname=".... .... 0... = Push: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.reset" showname=".... .... .0.. = Reset: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.syn" showname=".... .... ..0. = Syn: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.fin" showname=".... .... ...0 = Fin: Not set" size="1" pos="47" show="False" value="0" unmaskedvalue="10"/>
+      <field name="tcp.flags.str" showname="TCP Flags: ·······A····" size="2" pos="46" show="·······A····" value="b010"/>
+    </field>
+    <field name="tcp.window_size_value" showname="Window: 472" size="2" pos="48" show="472" value="01d8"/>
+    <field name="tcp.window_size" showname="Calculated window size: 472" size="2" pos="48" show="472" value="01d8"/>
+    <field name="tcp.window_size_scalefactor" showname="Window size scaling factor: -1 (unknown)" size="2" pos="48" show="-1" value="01d8"/>
+    <field name="tcp.checksum" showname="Checksum: 0x8cea [unverified]" size="2" pos="50" show="0x8cea" value="8cea"/>
+    <field name="tcp.checksum.status" showname="Checksum Status: Unverified" size="0" pos="50" show="2"/>
+    <field name="tcp.urgent_pointer" showname="Urgent Pointer: 0" size="2" pos="52" show="0" value="0000"/>
+    <field name="tcp.options" showname="Options: (24 bytes), No-Operation (NOP), No-Operation (NOP), Timestamps, No-Operation (NOP), No-Operation (NOP), SACK" size="24" pos="54" show="01:01:08:0a:76:e3:70:1b:82:8e:e9:22:01:01:05:0a:f9:14:e5:08:f9:14:e5:09" value="0101080a76e3701b828ee9220101050af914e508f914e509">
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="54" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="54" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="55" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="55" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.timestamp" showname="TCP Option - Timestamps: TSval 1994616859, TSecr 2190403874" size="10" pos="56" show="08:0a:76:e3:70:1b:82:8e:e9:22" value="080a76e3701b828ee922">
+        <field name="tcp.option_kind" showname="Kind: Time Stamp Option (8)" size="1" pos="56" show="8" value="08"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="57" show="10" value="0a"/>
+        <field name="tcp.options.timestamp.tsval" showname="Timestamp value: 1994616859" size="4" pos="58" show="1994616859" value="76e3701b"/>
+        <field name="tcp.options.timestamp.tsecr" showname="Timestamp echo reply: 2190403874" size="4" pos="62" show="2190403874" value="828ee922"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="66" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="66" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.nop" showname="TCP Option - No-Operation (NOP)" size="1" pos="67" show="01" value="01">
+        <field name="tcp.option_kind" showname="Kind: No-Operation (1)" size="1" pos="67" show="1" value="01"/>
+      </field>
+      <field name="tcp.options.sack" showname="TCP Option - SACK 25-26" size="10" pos="68" show="05:0a:f9:14:e5:08:f9:14:e5:09" value="050af914e508f914e509">
+        <field name="tcp.option_kind" showname="Kind: SACK (5)" size="1" pos="68" show="5" value="05"/>
+        <field name="tcp.option_len" showname="Length: 10" size="1" pos="69" show="10" value="0a"/>
+        <field name="tcp.options.sack_le" showname="left edge = 25 (relative)" size="4" pos="70" show="25" value="f914e508"/>
+        <field name="tcp.options.sack_re" showname="right edge = 26 (relative)" size="4" pos="74" show="26" value="f914e509"/>
+        <field name="tcp.options.sack.count" showname="TCP SACK Count: 1" size="0" pos="68" show="1"/>
+        <field name="tcp.options.sack.dsack_le" showname="D-SACK Left Edge = 25 (relative)" size="4" pos="70" show="25" value="f914e508"/>
+        <field name="tcp.options.sack.dsack_re" showname="D-SACK Right Edge = 26 (relative)" size="4" pos="74" show="26" value="f914e509"/>
+        <field name="" show="D-SACK Sequence" size="8" pos="70" value="f914e508f914e509">
+          <field name="_ws.expert" showname="Expert Info (Warning/Sequence): D-SACK Sequence" size="0" pos="70">
+            <field name="tcp.options.sack.dsack" showname="D-SACK Sequence" size="0" pos="0" show="" value=""/>
+            <field name="_ws.expert.message" showname="Message: D-SACK Sequence" hide="yes" size="0" pos="0" show="D-SACK Sequence"/>
+            <field name="_ws.expert.severity" showname="Severity level: Warning" size="0" pos="0" show="6291456"/>
+            <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+          </field>
+        </field>
+      </field>
+    </field>
+    <field name="" show="Timestamps" size="0" pos="34">
+      <field name="tcp.time_relative" showname="Time since first frame in this TCP stream: 0.049175000 seconds" size="0" pos="34" show="0.049175000"/>
+      <field name="tcp.time_delta" showname="Time since previous frame in this TCP stream: 0.000042000 seconds" size="0" pos="34" show="0.000042000"/>
+    </field>
+    <field name="tcp.analysis" showname="SEQ/ACK analysis" size="0" pos="34" show="" value="">
+      <field name="tcp.analysis.acks_frame" showname="This is an ACK to the segment in frame: 9" size="0" pos="34" show="9"/>
+      <field name="tcp.analysis.ack_rtt" showname="The RTT to ACK the segment was: 0.000042000 seconds" size="0" pos="34" show="0.000042000"/>
+      <field name="tcp.analysis.flags" showname="TCP Analysis Flags" size="0" pos="34" show="" value="">
+        <field name="tcp.analysis.duplicate_ack" showname="This is a TCP duplicate ack" size="0" pos="34" show="" value=""/>
+      </field>
+      <field name="tcp.analysis.duplicate_ack_num" showname="Duplicate ACK #: 1" size="0" pos="34" show="1"/>
+      <field name="tcp.analysis.duplicate_ack_frame" showname="Duplicate to the ACK in frame: 8" size="0" pos="34" show="8">
+        <field name="_ws.expert" showname="Expert Info (Note/Sequence): Duplicate ACK (#1)" size="0" pos="34">
+          <field name="tcp.analysis.duplicate_ack" showname="Duplicate ACK (#1)" size="0" pos="0" show="" value=""/>
+          <field name="_ws.expert.message" showname="Message: Duplicate ACK (#1)" hide="yes" size="0" pos="0" show="Duplicate ACK (#1)"/>
+          <field name="_ws.expert.severity" showname="Severity level: Note" size="0" pos="0" show="4194304"/>
+          <field name="_ws.expert.group" showname="Group: Sequence" size="0" pos="0" show="33554432"/>
+        </field>
+      </field>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="42">
+    <field name="num" pos="0" show="11" showname="Number" value="b" size="42"/>
+    <field name="len" pos="0" show="42" showname="Frame Length" value="2a" size="42"/>
+    <field name="caplen" pos="0" show="42" showname="Captured Length" value="2a" size="42"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.972805000 +0330" showname="Captured Time" value="1748081580.972805000" size="42"/>
+  </proto>
+  <proto name="frame" showname="Frame 11: 42 bytes on wire (336 bits), 42 bytes captured (336 bits)" size="42" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.972805000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.972805000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.972805000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.972805000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.972805000" size="0" pos="0" show="1748081580.972805000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.251592000 seconds" size="0" pos="0" show="0.251592000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.251592000 seconds" size="0" pos="0" show="0.251592000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.776739000 seconds" size="0" pos="0" show="1.776739000"/>
+    <field name="frame.number" showname="Frame Number: 11" size="0" pos="0" show="11"/>
+    <field name="frame.len" showname="Frame Length: 42 bytes (336 bits)" size="0" pos="0" show="42"/>
+    <field name="frame.cap_len" showname="Capture Length: 42 bytes (336 bits)" size="0" pos="0" show="42"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:arp" size="0" pos="0" show="eth:ethertype:arp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: ARP (0x0806)" size="2" pos="12" show="0x0806" value="0806"/>
+  </proto>
+  <proto name="arp" showname="Address Resolution Protocol (request)" size="28" pos="14">
+    <field name="arp.hw.type" showname="Hardware type: Ethernet (1)" size="2" pos="14" show="1" value="0001"/>
+    <field name="arp.proto.type" showname="Protocol type: IPv4 (0x0800)" size="2" pos="16" show="0x0800" value="0800"/>
+    <field name="arp.hw.size" showname="Hardware size: 6" size="1" pos="18" show="6" value="06"/>
+    <field name="arp.proto.size" showname="Protocol size: 4" size="1" pos="19" show="4" value="04"/>
+    <field name="arp.opcode" showname="Opcode: request (1)" size="2" pos="20" show="1" value="0001"/>
+    <field name="arp.src.hw_mac" showname="Sender MAC address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="22" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+    <field name="arp.src.proto_ipv4" showname="Sender IP address: 192.168.152.9" size="4" pos="28" show="192.168.152.9" value="c0a89809"/>
+    <field name="arp.dst.hw_mac" showname="Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)" size="6" pos="32" show="00:00:00:00:00:00" value="000000000000"/>
+    <field name="arp.dst.proto_ipv4" showname="Target IP address: 192.168.152.100" size="4" pos="38" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="42">
+    <field name="num" pos="0" show="12" showname="Number" value="c" size="42"/>
+    <field name="len" pos="0" show="42" showname="Frame Length" value="2a" size="42"/>
+    <field name="caplen" pos="0" show="42" showname="Captured Length" value="2a" size="42"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:00.972824000 +0330" showname="Captured Time" value="1748081580.972824000" size="42"/>
+  </proto>
+  <proto name="frame" showname="Frame 12: 42 bytes on wire (336 bits), 42 bytes captured (336 bits)" size="42" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:00.972824000 +0330" size="0" pos="0" show="May 24, 2025 13:43:00.972824000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:00.972824000 UTC" size="0" pos="0" show="May 24, 2025 10:13:00.972824000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081580.972824000" size="0" pos="0" show="1748081580.972824000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.000019000 seconds" size="0" pos="0" show="0.000019000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.000019000 seconds" size="0" pos="0" show="0.000019000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 1.776758000 seconds" size="0" pos="0" show="1.776758000"/>
+    <field name="frame.number" showname="Frame Number: 12" size="0" pos="0" show="12"/>
+    <field name="frame.len" showname="Frame Length: 42 bytes (336 bits)" size="0" pos="0" show="42"/>
+    <field name="frame.cap_len" showname="Capture Length: 42 bytes (336 bits)" size="0" pos="0" show="42"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:arp" size="0" pos="0" show="eth:ethertype:arp"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: ARP (0x0806)" size="2" pos="12" show="0x0806" value="0806"/>
+  </proto>
+  <proto name="arp" showname="Address Resolution Protocol (reply)" size="28" pos="14">
+    <field name="arp.hw.type" showname="Hardware type: Ethernet (1)" size="2" pos="14" show="1" value="0001"/>
+    <field name="arp.proto.type" showname="Protocol type: IPv4 (0x0800)" size="2" pos="16" show="0x0800" value="0800"/>
+    <field name="arp.hw.size" showname="Hardware size: 6" size="1" pos="18" show="6" value="06"/>
+    <field name="arp.proto.size" showname="Protocol size: 4" size="1" pos="19" show="4" value="04"/>
+    <field name="arp.opcode" showname="Opcode: reply (2)" size="2" pos="20" show="2" value="0002"/>
+    <field name="arp.src.hw_mac" showname="Sender MAC address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="22" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+    <field name="arp.src.proto_ipv4" showname="Sender IP address: 192.168.152.100" size="4" pos="28" show="192.168.152.100" value="c0a89864"/>
+    <field name="arp.dst.hw_mac" showname="Target MAC address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="32" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+    <field name="arp.dst.proto_ipv4" showname="Target IP address: 192.168.152.9" size="4" pos="38" show="192.168.152.9" value="c0a89809"/>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="13" showname="Number" value="d" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:01.198297000 +0330" showname="Captured Time" value="1748081581.198297000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 13: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:01.198297000 +0330" size="0" pos="0" show="May 24, 2025 13:43:01.198297000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:01.198297000 UTC" size="0" pos="0" show="May 24, 2025 10:13:01.198297000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081581.198297000" size="0" pos="0" show="1748081581.198297000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.225473000 seconds" size="0" pos="0" show="0.225473000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.225473000 seconds" size="0" pos="0" show="0.225473000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 2.002231000 seconds" size="0" pos="0" show="2.002231000"/>
+    <field name="frame.number" showname="Frame Number: 13" size="0" pos="0" show="13"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56), Dst: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.dst_resolved" showname="Destination (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="0" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="0" show="11936633" value="b62379"/>
+      <field name="eth.dst.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="0" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.src" showname="Source: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.src_resolved" showname="Source (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.src.oui" showname="Source OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.src.oui_resolved" showname="Source OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="6" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="6" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="6" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="6" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.src.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 192.168.152.100, Dst: 1.1.1.1" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x00 (DSCP: CS0, ECN: Not-ECT)" size="1" pos="15" show="0x00" value="00">
+      <field name="ip.dsfield.dscp" showname="0000 00.. = Differentiated Services Codepoint: Default (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0x3854 (14420)" size="2" pos="18" show="0x3854" value="3854"/>
+    <field name="ip.flags" showname="010. .... = Flags: 0x2, Don&#x27;t fragment" size="1" pos="20" show="0x02" value="2" unmaskedvalue="40">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+      <field name="ip.flags.df" showname=".1.. .... = Don&#x27;t fragment: Set" size="1" pos="20" show="True" value="1" unmaskedvalue="40"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="40"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="4000"/>
+    <field name="ip.ttl" showname="Time to Live: 64" size="1" pos="22" show="64" value="40"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xa746 [validation disabled]" size="2" pos="24" show="0xa746" value="a746"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 192.168.152.100" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.src_host" showname="Source Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="26" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst" showname="Destination Address: 1.1.1.1" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst_host" showname="Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="30" show="1.1.1.1" value="01010101"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 8 (Echo (ping) request)" size="1" pos="34" show="8" value="08"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0xe1fe [correct]" size="2" pos="36" show="0xe1fe" value="e1fe"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 28 (0x001c)" size="2" pos="40" show="28" value="001c"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 7168 (0x1c00)" size="2" pos="40" show="7168" value="001c"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:43:01.198261000 +0330" size="16" pos="42" show="May 24, 2025 13:43:01.198261000 +0330" value="ad9b3168000000007506030000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.000036000 seconds" size="16" pos="42" show="0.000036000" value="ad9b3168000000007506030000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+<packet>
+  <proto name="geninfo" pos="0" showname="General information" size="98">
+    <field name="num" pos="0" show="14" showname="Number" value="e" size="98"/>
+    <field name="len" pos="0" show="98" showname="Frame Length" value="62" size="98"/>
+    <field name="caplen" pos="0" show="98" showname="Captured Length" value="62" size="98"/>
+    <field name="timestamp" pos="0" show="May 24, 2025 13:43:01.358267000 +0330" showname="Captured Time" value="1748081581.358267000" size="98"/>
+  </proto>
+  <proto name="frame" showname="Frame 14: 98 bytes on wire (784 bits), 98 bytes captured (784 bits)" size="98" pos="0">
+    <field name="frame.encap_type" showname="Encapsulation type: Ethernet (1)" size="0" pos="0" show="1"/>
+    <field name="frame.time" showname="Arrival Time: May 24, 2025 13:43:01.358267000 +0330" size="0" pos="0" show="May 24, 2025 13:43:01.358267000 +0330"/>
+    <field name="frame.time_utc" showname="UTC Arrival Time: May 24, 2025 10:13:01.358267000 UTC" size="0" pos="0" show="May 24, 2025 10:13:01.358267000 UTC"/>
+    <field name="frame.time_epoch" showname="Epoch Arrival Time: 1748081581.358267000" size="0" pos="0" show="1748081581.358267000"/>
+    <field name="frame.offset_shift" showname="Time shift for this packet: 0.000000000 seconds" size="0" pos="0" show="0.000000000"/>
+    <field name="frame.time_delta" showname="Time delta from previous captured frame: 0.159970000 seconds" size="0" pos="0" show="0.159970000"/>
+    <field name="frame.time_delta_displayed" showname="Time delta from previous displayed frame: 0.159970000 seconds" size="0" pos="0" show="0.159970000"/>
+    <field name="frame.time_relative" showname="Time since reference or first frame: 2.162201000 seconds" size="0" pos="0" show="2.162201000"/>
+    <field name="frame.number" showname="Frame Number: 14" size="0" pos="0" show="14"/>
+    <field name="frame.len" showname="Frame Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.cap_len" showname="Capture Length: 98 bytes (784 bits)" size="0" pos="0" show="98"/>
+    <field name="frame.marked" showname="Frame is marked: False" size="0" pos="0" show="False"/>
+    <field name="frame.ignored" showname="Frame is ignored: False" size="0" pos="0" show="False"/>
+    <field name="frame.protocols" showname="Protocols in frame: eth:ethertype:ip:icmp:data" size="0" pos="0" show="eth:ethertype:ip:icmp:data"/>
+  </proto>
+  <proto name="eth" showname="Ethernet II, Src: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd), Dst: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="14" pos="0">
+    <field name="eth.dst" showname="Destination: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56">
+      <field name="eth.dst_resolved" showname="Destination (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.dst.oui" showname="Destination OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.dst.oui_resolved" showname="Destination OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.addr" showname="Address: TPLink_bc:ca:56 (b4:b0:24:bc:ca:56)" size="6" pos="0" show="b4:b0:24:bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): TPLink_bc:ca:56" hide="yes" size="6" pos="0" show="TPLink_bc:ca:56" value="b4b024bcca56"/>
+      <field name="eth.addr.oui" showname="Address OUI: b4:b0:24 (TP-Link Corporation L" hide="yes" size="3" pos="0" show="11841572" value="b4b024"/>
+      <field name="eth.addr.oui_resolved" showname="Address OUI (resolved): TP-Link Corporation Limited" hide="yes" size="6" pos="0" show="TP-Link Corporation Limited" value="b4b024bcca56"/>
+      <field name="eth.dst.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.lg" showname=".... ..0. .... .... .... .... = LG bit: Globally unique address (factory default)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.dst.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="0" show="False" value="0" unmaskedvalue="b4b024"/>
+    </field>
+    <field name="eth.src" showname="Source: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd">
+      <field name="eth.src_resolved" showname="Source (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.src.oui" showname="Source OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.addr" showname="Address: b6:23:79:a9:7d:fd (b6:23:79:a9:7d:fd)" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr_resolved" showname="Address (resolved): b6:23:79:a9:7d:fd" hide="yes" size="6" pos="6" show="b6:23:79:a9:7d:fd" value="b62379a97dfd"/>
+      <field name="eth.addr.oui" showname="Address OUI: b6:23:79" hide="yes" size="3" pos="6" show="11936633" value="b62379"/>
+      <field name="eth.src.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.lg" showname=".... ..1. .... .... .... .... = LG bit: Locally administered address (this is NOT the factory default)" hide="yes" size="3" pos="6" show="True" value="1" unmaskedvalue="b62379"/>
+      <field name="eth.src.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+      <field name="eth.ig" showname=".... ...0 .... .... .... .... = IG bit: Individual address (unicast)" hide="yes" size="3" pos="6" show="False" value="0" unmaskedvalue="b62379"/>
+    </field>
+    <field name="eth.type" showname="Type: IPv4 (0x0800)" size="2" pos="12" show="0x0800" value="0800"/>
+  </proto>
+  <proto name="ip" showname="Internet Protocol Version 4, Src: 1.1.1.1, Dst: 192.168.152.100" size="20" pos="14">
+    <field name="ip.version" showname="0100 .... = Version: 4" size="1" pos="14" show="4" value="45"/>
+    <field name="ip.hdr_len" showname=".... 0101 = Header Length: 20 bytes (5)" size="1" pos="14" show="20" value="45"/>
+    <field name="ip.dsfield" showname="Differentiated Services Field: 0x08 (DSCP: Unknown, ECN: Not-ECT)" size="1" pos="15" show="0x08" value="08">
+      <field name="ip.dsfield.dscp" showname="0000 10.. = Differentiated Services Codepoint: Unknown (2)" size="1" pos="15" show="2" value="2" unmaskedvalue="08"/>
+      <field name="ip.dsfield.ecn" showname=".... ..00 = Explicit Congestion Notification: Not ECN-Capable Transport (0)" size="1" pos="15" show="0" value="0" unmaskedvalue="08"/>
+    </field>
+    <field name="ip.len" showname="Total Length: 84" size="2" pos="16" show="84" value="0054"/>
+    <field name="ip.id" showname="Identification: 0x361b (13851)" size="2" pos="18" show="0x361b" value="361b"/>
+    <field name="ip.flags" showname="000. .... = Flags: 0x0" size="1" pos="20" show="0x00" value="0" unmaskedvalue="00">
+      <field name="ip.flags.rb" showname="0... .... = Reserved bit: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.df" showname=".0.. .... = Don&#x27;t fragment: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+      <field name="ip.flags.mf" showname="..0. .... = More fragments: Not set" size="1" pos="20" show="False" value="0" unmaskedvalue="00"/>
+    </field>
+    <field name="ip.frag_offset" showname="...0 0000 0000 0000 = Fragment Offset: 0" size="2" pos="20" show="0" value="0" unmaskedvalue="0000"/>
+    <field name="ip.ttl" showname="Time to Live: 50" size="1" pos="22" show="50" value="32"/>
+    <field name="ip.proto" showname="Protocol: ICMP (1)" size="1" pos="23" show="1" value="01"/>
+    <field name="ip.checksum" showname="Header Checksum: 0xf777 [validation disabled]" size="2" pos="24" show="0xf777" value="f777"/>
+    <field name="ip.checksum.status" showname="Header checksum status: Unverified" size="0" pos="24" show="2"/>
+    <field name="ip.src" showname="Source Address: 1.1.1.1" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.addr" showname="Source or Destination Address: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.src_host" showname="Source Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.host" showname="Source or Destination Host: 1.1.1.1" hide="yes" size="4" pos="26" show="1.1.1.1" value="01010101"/>
+    <field name="ip.dst" showname="Destination Address: 192.168.152.100" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.addr" showname="Source or Destination Address: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.dst_host" showname="Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+    <field name="ip.host" showname="Source or Destination Host: 192.168.152.100" hide="yes" size="4" pos="30" show="192.168.152.100" value="c0a89864"/>
+  </proto>
+  <proto name="icmp" showname="Internet Control Message Protocol" size="64" pos="34">
+    <field name="icmp.type" showname="Type: 0 (Echo (ping) reply)" size="1" pos="34" show="0" value="00"/>
+    <field name="icmp.code" showname="Code: 0" size="1" pos="35" show="0" value="00"/>
+    <field name="icmp.checksum" showname="Checksum: 0xe9fe [correct]" size="2" pos="36" show="0xe9fe" value="e9fe"/>
+    <field name="icmp.checksum.status" showname="Checksum Status: Good" size="0" pos="36" show="1"/>
+    <field name="icmp.ident" showname="Identifier (BE): 8 (0x0008)" size="2" pos="38" show="8" value="0008"/>
+    <field name="icmp.ident_le" showname="Identifier (LE): 2048 (0x0800)" size="2" pos="38" show="2048" value="0008"/>
+    <field name="icmp.seq" showname="Sequence Number (BE): 28 (0x001c)" size="2" pos="40" show="28" value="001c"/>
+    <field name="icmp.seq_le" showname="Sequence Number (LE): 7168 (0x1c00)" size="2" pos="40" show="7168" value="001c"/>
+    <field name="icmp.resp_to" showname="Request frame: 13" size="0" pos="34" show="13"/>
+    <field name="icmp.resptime" showname="Response time: 159.970 ms" size="0" pos="34" show="159.97"/>
+    <field name="icmp.data_time" showname="Timestamp from icmp data: May 24, 2025 13:43:01.198261000 +0330" size="16" pos="42" show="May 24, 2025 13:43:01.198261000 +0330" value="ad9b3168000000007506030000000000"/>
+    <field name="icmp.data_time_relative" showname="Timestamp from icmp data (relative): 0.160006000 seconds" size="16" pos="42" show="0.160006000" value="ad9b3168000000007506030000000000"/>
+    <field name="data" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637">
+      <field name="data.data" showname="Data: 101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637" size="40" pos="58" show="10:11:12:13:14:15:16:17:18:19:1a:1b:1c:1d:1e:1f:20:21:22:23:24:25:26:27:28:29:2a:2b:2c:2d:2e:2f:30:31:32:33:34:35:36:37" value="101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f3031323334353637"/>
+      <field name="data.len" showname="Length: 40" size="0" pos="58" show="40"/>
+    </field>
+  </proto>
+</packet>
+
+
+</pdml>

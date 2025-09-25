@@ -1,0 +1,326 @@
+{
+    "Stack 1": {
+        "name": "ETH-VLAN-IP-UDP-GTP-IP-UDP-RTP",
+        "count": 339,
+        "size": [
+            14,
+            4,
+            20,
+            8,
+            8,
+            20,
+            8,
+            64
+        ],
+        "offset": [
+            0,
+            14,
+            18,
+            38,
+            46,
+            18,
+            38,
+            82
+        ],
+        "isSizeEqual": [
+            true,
+            true,
+            false,
+            true,
+            true,
+            false,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            false,
+            false,
+            true,
+            false,
+            false,
+            true
+        ]
+    },
+    "Stack 2": {
+        "name": "ETH-IP-ICMP-QUIC",
+        "count": 2,
+        "size": [
+            14,
+            20,
+            556,
+            639
+        ],
+        "offset": [
+            0,
+            18,
+            34,
+            70
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true,
+            false
+        ]
+    },
+    "Stack 3": {
+        "name": "ETH-IP-UDP-QUIC-QUIC",
+        "count": 3,
+        "size": [
+            14,
+            20,
+            8,
+            639,
+            639
+        ],
+        "offset": [
+            0,
+            18,
+            38,
+            70,
+            70
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            false,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            false,
+            false,
+            false
+        ]
+    },
+    "Stack 4": {
+        "name": "ETH-IP-TCP-TLS",
+        "count": 5,
+        "size": [
+            14,
+            20,
+            32,
+            6605
+        ],
+        "offset": [
+            0,
+            18,
+            34,
+            66
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true,
+            false
+        ]
+    },
+    "Stack 5": {
+        "name": "ETH-IP-TCP",
+        "count": 473,
+        "size": [
+            14,
+            20,
+            32
+        ],
+        "offset": [
+            0,
+            18,
+            34
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true
+        ]
+    },
+    "Stack 6": {
+        "name": "ETH-IP-TCP-FAKE-FIELD-WRAPPER",
+        "count": 1,
+        "size": [
+            14,
+            20,
+            32,
+            0
+        ],
+        "offset": [
+            0,
+            18,
+            34,
+            0
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true,
+            true
+        ]
+    },
+    "Stack 7": {
+        "name": "ETH-IP-TCP-FAKE-FIELD-WRAPPER-TLS-TLS",
+        "count": 34,
+        "size": [
+            14,
+            20,
+            32,
+            0,
+            6605,
+            6605
+        ],
+        "offset": [
+            0,
+            18,
+            34,
+            0,
+            66,
+            66
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true,
+            true,
+            false,
+            false
+        ]
+    },
+    "Stack 8": {
+        "name": "ETH-IP-UDP-MDNS",
+        "count": 4,
+        "size": [
+            14,
+            20,
+            8,
+            64
+        ],
+        "offset": [
+            0,
+            18,
+            38,
+            42
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            false,
+            false
+        ]
+    },
+    "Stack 9": {
+        "name": "ETH-IPV6-UDP-MDNS",
+        "count": 4,
+        "size": [
+            14,
+            42,
+            8,
+            64
+        ],
+        "offset": [
+            0,
+            14,
+            38,
+            42
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            false,
+            false
+        ]
+    },
+    "Stack 10": {
+        "name": "ETH-IPV6-ICMPV6",
+        "count": 1,
+        "size": [
+            14,
+            42,
+            28
+        ],
+        "offset": [
+            0,
+            14,
+            62
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            true
+        ]
+    },
+    "Stack 11": {
+        "name": "ETH-IP-IGMP",
+        "count": 2,
+        "size": [
+            14,
+            20,
+            16
+        ],
+        "offset": [
+            0,
+            18,
+            38
+        ],
+        "isSizeEqual": [
+            true,
+            false,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            false,
+            true
+        ]
+    }
+}

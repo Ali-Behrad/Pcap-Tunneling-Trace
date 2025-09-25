@@ -1,0 +1,18 @@
+watchdog:
+  interface : "wlan1"
+  pcap_dir : "./captured_pcaps"
+  log_dir : "./logs/watchdog"
+  interval : 5 # seconds
+  sleep_time : 600
+  iteration_duration: 0.1 # second
+  buffer_size : 1048576 # 1 GB
+
+analyzer:
+  results : "./results"
+  log_dir : "./logs/analyzer"
+  stacks_iteration_plots: "./results/iterations"
+  stack_overview: "./results/stacks"
+
+plotter:
+  iteration_num: 4
+  stacks_per_plot: 8

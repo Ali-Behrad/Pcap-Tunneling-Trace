@@ -1,0 +1,126 @@
+{
+    "Stack 1": {
+        "name": "ETH-IP-ICMP",
+        "count": 6,
+        "size": [
+            14,
+            20,
+            64
+        ],
+        "offset": [
+            0,
+            14,
+            34
+        ],
+        "isSizeEqual": [
+            true,
+            true,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            true
+        ]
+    },
+    "Stack 2": {
+        "name": "ETH-IP-UDP-DNS",
+        "count": 1,
+        "size": [
+            14,
+            20,
+            8,
+            38
+        ],
+        "offset": [
+            0,
+            14,
+            34,
+            42
+        ],
+        "isSizeEqual": [
+            true,
+            true,
+            true,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            true,
+            true
+        ]
+    },
+    "Stack 3": {
+        "name": "ETH-IP-TCP-TLS",
+        "count": 1,
+        "size": [
+            14,
+            20,
+            34,
+            24
+        ],
+        "offset": [
+            0,
+            14,
+            34,
+            66
+        ],
+        "isSizeEqual": [
+            true,
+            true,
+            false,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            true,
+            true
+        ]
+    },
+    "Stack 4": {
+        "name": "ETH-IP-TCP",
+        "count": 4,
+        "size": [
+            14,
+            20,
+            34
+        ],
+        "offset": [
+            0,
+            14,
+            34
+        ],
+        "isSizeEqual": [
+            true,
+            true,
+            false
+        ],
+        "isOffsetEqual": [
+            true,
+            true,
+            true
+        ]
+    },
+    "Stack 5": {
+        "name": "ETH-ARP",
+        "count": 2,
+        "size": [
+            14,
+            28
+        ],
+        "offset": [
+            0,
+            14
+        ],
+        "isSizeEqual": [
+            true,
+            true
+        ],
+        "isOffsetEqual": [
+            true,
+            true
+        ]
+    }
+}
